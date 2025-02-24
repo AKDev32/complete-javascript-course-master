@@ -1,3 +1,4 @@
+/*
 let js = "amazing";
 // if (js == "amazing") alert("JavaScript is FUN!");
 
@@ -33,6 +34,45 @@ let job1 = "programmer";
 let job2 = "software engineer";
 
 console.log(myFirstJob);
+*/
+
+/*
+let javaScriptIsFun = true;
+console.log(javaScriptIsFun);
+
+// console.log(typeof true);
+console.log(typeof javaScriptIsFun);
+// console.log(typeof 23);
+// console.log(typeof 'aman');
+
+javaScriptIsFun = "Yes!";
+console.log(typeof javaScriptIsFun);
+
+let year;
+console.log(year);
+console.log(typeof year);
+
+year = 1991;
+console.log(typeof year);
+
+console.log(typeof null);
+*/
+
+let age = 20;
+age = 21;
+
+const birthPlace = 2004;
+// birthPlace = 2005;
+// const job;
+
+var job = 'programmer';
+job = 'teacher';
+
+lastName = 'Kumar';
+console.log(lastName);
+
+
+
 
 
 
