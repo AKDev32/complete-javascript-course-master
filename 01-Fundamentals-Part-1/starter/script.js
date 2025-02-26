@@ -194,6 +194,34 @@ if (BMIAman > BMIAbhishek) {
     console.log(`Abhishek BMI is greater than the Aman BMI and value of Abhishek's BMI : ${BMIAbhishek}`);
 }
 */
+
+/*
+// Type conversion
+const inputYear = '2004';
+console.log(Number(inputYear), inputYear);
+console.log(Number(inputYear) + 18);
+
+console.log(Number('Aman'));
+console.log(typeof(NaN));
+
+console.log(String (23), 23);
+
+
+// Type coercion
+
+console.log('I am ' + 23 + ' years old');
+console.log('23' + '10' + 3);
+console.log('23' - '10' - 3);
+console.log('23' * '10' * 3);
+console.log('21' / '7' / 3);
+
+let n = '1' + 1;
+n = n - 1;
+console.log(n);
+*/
+
+
+
      
 
 
