@@ -220,6 +220,84 @@ n = n - 1;
 console.log(n);
 */
 
+/*
+// Truthy and Falsy
+// 5 falsy values : 0, " ", undefined, null, NaN
+console.log(Boolean(0));
+console.log(Boolean(undefined));
+console.log(Boolean(null));
+console.log(Boolean("Aman"));
+console.log(Boolean(NaN));
+console.log(Boolean({}));
+console.log(Boolean(''));
+
+const money = 100;
+if (money) {
+    console.log("Don't spend it all ;)");
+} else {
+    console.log("You should get a job!");
+}
+
+let height = 0;
+if (height) {
+    console.log("YAY! Height is defined");
+} else{
+    console.log("Height is undefined");
+}
+*/ 
+
+/*
+// == and ===
+const age = '18';
+if (age === 18) {
+    console.log("You just become adult : (strict)");
+}
+if (age == 18) {
+    console.log("You just become adult : (loose)");
+}
+
+const favourite = Number(prompt("What's your favourite number?"));
+console.log(favourite);
+console.log(typeof favourite);
+
+if (favourite === 32) {
+    console.log("Cool! 32 is an amazing number!");
+} else if (favourite === 7) {
+    console.log("7 is also a cool number"); 
+} else if (favourite === 9) {
+    console.log("9 is also a cool number"); 
+} else {
+    console.log("Number is not 32 or 7");
+}
+
+if (favourite !== 32) {
+    console.log("Why not 32?");
+}
+*/
+/*
+// Logical operator
+const hasDriversLicense = true;
+const hasGoodVision = true;
+console.log(hasDriversLicense && hasGoodVision);
+console.log(hasDriversLicense || hasGoodVision);
+console.log(!hasDriversLicense);
+const shouldDrive = hasDriversLicense && hasGoodVision;
+// if (shouldDrive) {
+//     console.log("Sarah is able to drive");
+// } else {
+//     console.log("Someone else should drive...");
+// }
+
+const isTired = true;
+console.log(hasDriversLicense || hasGoodVision || isTired);
+console.log(hasDriversLicense && hasGoodVision && isTired);
+
+if (hasDriversLicense && hasGoodVision && !isTired) {
+    console.log("Sarah is able to drive");
+} else {
+    console.log("Someone else should drive...");
+}
+*/
 
 
      
