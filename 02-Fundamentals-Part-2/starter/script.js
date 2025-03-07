@@ -95,7 +95,7 @@ function fruitProcessor (apples, oranges) {
 
 console.log(fruitProcessor(2, 3));
 */
-
+/*
 const calcAge = function (birthYear) {
     return 2025 - birthYear;
 }
@@ -116,3 +116,31 @@ const yearsUntilRetirement = (birthYear, firstName) => {
 console.log( yearsUntilRetirement(2004, 'Aman Kumar'));
 console.log( yearsUntilRetirement(2000, 'Abhishek Kumar'));
 console.log( yearsUntilRetirement(1950, 'Rahul Kumar'));
+*/
+
+// Arrays
+
+const friend1 = 'Aman';
+const friend2 = 'Abhishek';
+const friend3 = 'kajal';
+
+const friends = ['Aman', 'Abhishek', 'Kajal'];
+console.log (friends);
+
+const years = new Array(1991, 2000, 2010, 2020);
+console.log(friends[0]);
+console.log(friends[2]);
+console.log(friends[1]);
+console.log(friends.length);
+console.log(friends[friends.length - 1]);
+
+friends[2] = 'Rahul';
+console.log(friends);
+// friends = ['Lalit', 'Sadhana']; // we can't do this
+
+const firstName = 'Aman';
+const aman = ['aman', 'kumar', 2025 - 2004, 'student', friends];
+console.log(years);
+console.log(aman);
+console.log(aman.length);
+
