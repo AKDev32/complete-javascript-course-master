@@ -118,6 +118,7 @@ console.log( yearsUntilRetirement(2000, 'Abhishek Kumar'));
 console.log( yearsUntilRetirement(1950, 'Rahul Kumar'));
 */
 
+/*
 // Arrays
 
 const friend1 = 'Aman';
@@ -127,7 +128,7 @@ const friend3 = 'kajal';
 const friends = ['Aman', 'Abhishek', 'Kajal'];
 console.log (friends);
 
-const years = new Array(1991, 2000, 2010, 2020);
+const y = new Array(1991, 2000, 2010, 2020);
 console.log(friends[0]);
 console.log(friends[2]);
 console.log(friends[1]);
@@ -140,7 +141,52 @@ console.log(friends);
 
 const firstName = 'Aman';
 const aman = ['aman', 'kumar', 2025 - 2004, 'student', friends];
-console.log(years);
+console.log(y);
 console.log(aman);
 console.log(aman.length);
 
+// Exercise
+const calcAge = function (birthYear) {
+    return 2025 - birthYear;
+}
+const years = [1990, 1967, 2002, 2010, 2018];
+// console.log(calcAge(years));
+const age1 = calcAge(years[0]);
+const age2 = calcAge(years[1]);
+const age3 = calcAge(years[years.length - 1]);  // 2018
+console.log(age1, age2, age3);
+
+const ages = [calcAge(years[0]), calcAge(years[1]), calcAge(years[years.length - 1])];  
+console.log(ages);
+*/
+
+const friends = ['Aman', 'Abhishek', 'Kajal'];
+// Add elements
+const newLength = friends.push('Rahul');
+console.log(friends);
+console.log(newLength);
+
+// Add elements in the beginning
+friends.unshift('Rahul');
+console.log(friends);
+
+// Remove elements
+friends.pop();  // Last
+const popped = friends.pop();
+console.log(popped);
+console.log(friends);   // ['Aman', 'Abhishek', 'Kajal']
+
+friends.shift();  // First
+console.log(friends);
+
+console.log(friends.indexOf('Abhishek'));
+console.log(friends.indexOf('Kajal'));
+
+friends.push(23);
+console.log(friends.includes('Abhishek'));
+console.log(friends.includes('Kajal'));
+console.log(friends.includes(23));
+
+if (friends.includes('Abhishek')) {
+    console.log('You have a friend called Abhishek');
+}
