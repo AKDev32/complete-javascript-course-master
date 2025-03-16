@@ -160,6 +160,7 @@ const ages = [calcAge(years[0]), calcAge(years[1]), calcAge(years[years.length -
 console.log(ages);
 */
 
+/*
 const friends = ['Aman', 'Abhishek', 'Kajal'];
 // Add elements
 const newLength = friends.push('Rahul');
@@ -190,3 +191,69 @@ console.log(friends.includes(23));
 if (friends.includes('Abhishek')) {
     console.log('You have a friend called Abhishek');
 }
+*/
+/*
+const amanArray = [
+    'aman',
+    'kumar',
+    2025 - 2004,
+    'teacher',
+    ['kajal', 'abhishek', 'lalit', 'sadhana']
+];
+*/
+/*
+// Object
+const aman = {
+    firstName: 'aman',
+    lastName: 'kumar',
+    age: 2025 - 2004,
+    job : 'teacher',
+    family: ['kajal', 'sadhana', 'abhishek', 'lalit']
+};
+console.log(aman);
+
+console.log(aman.lastName);
+console.log(aman['lastName']);
+
+const nameKey = "Name";
+console.log(aman['first' + nameKey]);
+console.log(aman['last' + nameKey]);
+
+// console.log(aman.'last' + nameKey);
+
+const interestedIn = prompt('What do you want to knoe about aman? Choose between firstName, lastName, age, job, and family');
+// console.log(aman.interestedIn);
+console.log(aman[interestedIn]);
+
+if (aman[interestedIn]) {
+    console.log(aman[interestedIn]);
+} else {
+    console.log('Wrong request! Choose between firstName, lastName, age, job, and family');
+}
+
+aman.location = 'India';
+aman['X'] = '@amankumar';
+console.log(aman);
+
+console.log(`${aman.firstName} has ${aman.family.length} friends, and his best friend is ${aman.family[0]}`);
+*/
+
+const aman = {
+    firstName: 'aman',
+    lastName: 'kumar',
+    birthYear: 2004,
+    job: 'teacher',
+    family: ['kajal', 'sadhana', 'abhishek', 'lalit'],
+    hasDriverLicense: true,
+
+    calcAge: function (birthYear) {
+        return 2025 - birthYear;
+    }
+};
+
+console.log(aman.calcAge(2004));
+console.log(aman['calcAge'](2004));
+
+
+
+
