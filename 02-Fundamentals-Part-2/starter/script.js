@@ -246,14 +246,35 @@ const aman = {
     family: ['kajal', 'sadhana', 'abhishek', 'lalit'],
     hasDriverLicense: true,
 
-    calcAge: function (birthYear) {
-        return 2025 - birthYear;
+    // calcAge: function (birthYear) {
+    //     return 2025 - birthYear;
+    // }
+    // calcAge: function () {
+    //     // console.log(this);
+    //     return 2025 - this.birthYear;
+    // }
+    calcAge: function () {
+        this.age = 2025 - this.birthYear;
+        return this.age;
+    },
+
+    getSummary: function () {
+        
+        return `${this.firstName} is a ${this.calcAge()}-year old ${aman.job}, and he has ${this.hasDriverLicense ? 'a' : 'no'} driver's license`;
     }
 };
 
-console.log(aman.calcAge(2004));
-console.log(aman['calcAge'](2004));
+console.log(aman.calcAge());
 
+console.log(aman.age);
+console.log(aman.age);
+console.log(aman.age);
+// console.log(aman['calcAge'](2004));
+
+// Challenge
+// "aman is a 21-year old teacher, and he has a driver's lincense"
+
+console.log(aman.getSummary());
 
 
 
