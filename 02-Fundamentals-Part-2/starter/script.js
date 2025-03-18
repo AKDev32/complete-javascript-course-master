@@ -237,7 +237,7 @@ console.log(aman);
 
 console.log(`${aman.firstName} has ${aman.family.length} friends, and his best friend is ${aman.family[0]}`);
 */
-
+/*
 const aman = {
     firstName: 'aman',
     lastName: 'kumar',
@@ -275,6 +275,117 @@ console.log(aman.age);
 // "aman is a 21-year old teacher, and he has a driver's lincense"
 
 console.log(aman.getSummary());
+*/
+
+/*
+// console.log('Lifting weights repetitions 1 🏋️‍♀️');
+// console.log('Lifting weights repetitions 2 🏋️‍♀️');
+// console.log('Lifting weights repetitions 3 🏋️‍♀️');
+// console.log('Lifting weights repetitions 4 🏋️‍♀️');
+// console.log('Lifting weights repetitions 5 🏋️‍♀️');
+// console.log('Lifting weights repetitions 6 🏋️‍♀️');
+// console.log('Lifting weights repetitions 7 🏋️‍♀️');
+// console.log('Lifting weights repetitions 8 🏋️‍♀️');
+// console.log('Lifting weights repetitions 9 🏋️‍♀️');
+// console.log('Lifting weights repetitions 10 🏋️‍♀️');
+
+for (let rep = 1; rep <= 10; rep++) {
+    console.log(`Lifting weights repetitions ${rep}🏋️`);
+}
+*/
+
+/*
+const aman = [
+    'aman',
+    'kumar',
+    2025 - 2004,
+    'teacher',
+    ['kajal', 'abhishek', 'lalit', 'sadhana'],
+    true
+];
+const types = [];
+
+// console.log(aman[0]);
+// console.log(aman[1]);
+// console.log(aman[2]);
 
 
+for (let i = 0; i < aman.length; i++) {
+    // Reading from the array
+    console.log(aman[i], typeof aman[i]);
 
+    // Filling the type array
+    // types[i] = typeof aman[i];
+    types.push(typeof aman[i]);
+}
+
+console.log(types);
+
+const years = [1991, 2004, 1969, 2020];
+const ages = [];
+
+for (let i = 0; i < years.length; i++) {
+    ages.push(2025 - years[i]);
+}
+console.log(ages);
+
+// continue and break
+
+console.log ('---BREAK WITH NUMBER---');
+for (let i = 0; i < aman.length; i++) {
+    if (typeof aman[i] != 'number') break;
+
+    console.log(aman[i], typeof aman[i]);
+}
+console.log ('---ONLY STRINGS---');
+for (let i = 0; i < aman.length; i++) {
+    if (typeof aman[i] != 'string') continue;
+
+    console.log(aman[i], typeof aman[i]);
+}
+*/
+
+/*
+const aman = [
+    'aman',
+    'kumar',
+    2025 - 2004,
+    'teacher',
+    ['kajal', 'abhishek', 'lalit', 'sadhana'],
+    true
+];
+
+// 0, 1, ... 4
+// 4, 3, ... 0
+
+for (let i = aman.length - 1; i >= 0 ; i--) {
+    console.log(i, aman[i]);
+}
+
+for (let exercise = 1; exercise < 4; exercise++) {
+    console.log(`----starting exercise ${exercise}----`);
+    for (let rep = 1; rep < 6; rep++) {
+        console.log(`Exercise ${exercise}: Lifting weight repetation ${rep} 🏋️‍♀️`);    
+    } 
+}
+*/
+
+for (let rep = 1; rep <= 10; rep++) {
+    // console.log(`Lifting weights repetitions ${rep}🏋️`);
+}
+
+let rep = 1;
+while (rep <= 10) {
+    // console.log(`WHILE: Lifting weights repetitions ${rep}🏋️`);
+    rep++;
+}
+
+let dice = Math.trunc(Math.random() * 6) + 1;
+
+while (dice !== 6) {
+    console.log(`You rolled a ${dice}`);
+    dice = Math.trunc(Math.random() * 6) + 1;
+    if (dice === 6) {
+        console.log(`Loop is about to end...`);
+    }
+}
