@@ -84,6 +84,7 @@ console.log(y === window.y);
 console.log(z === window.z);  
 */
 
+/*
 // This Keywords
 console.log(this);
 
@@ -119,3 +120,28 @@ kajal.calcAge();
 
 const f = aman.calcAge;
 f();
+*/
+
+// var firstName = 'kajal';
+
+const aman = {
+  firstName: 'Aman',
+  year: 2004,
+  calcAge: function () {
+    // console.log(this);
+    console.log(2025 - this.year);
+
+    const isMillenial = function () {
+      console.log(this);
+      console.log(this.year >= 2004 && this.year <= 2008);
+    };
+    isMillenial();
+  },
+  greet: function () {
+    console.log(this);
+    console.log(`Hey ${this.firstName}`);
+  }, // Arrow function doesn't get its own this keyword
+};
+aman.greet(); // Hey undefined
+// console.log(this.firstName); // undefined
+aman.calcAge(); // 21
